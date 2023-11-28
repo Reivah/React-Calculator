@@ -37,7 +37,7 @@ export default function UserInput({}) {
 			<div className='input-group'>
 				<p>
 					<label>expected duration</label>
-					<input type='number' required/>
+					<input type='number' required onChange={handleReturn}/>
 				</p>
 				<p>
 					<label>duration</label>

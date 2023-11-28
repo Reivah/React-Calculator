@@ -27,7 +27,7 @@ export default function UserInput({}) {
 			<div className='input-group'>
 				<p>
 					<label>initial investment</label>
-					<input type='number' required onChange={handleInitial} />
+					<input type='number' required onChange={handleInitial} value={initialInvestment} />
 				</p>
 				<p>
 					<label>annual investment</label>

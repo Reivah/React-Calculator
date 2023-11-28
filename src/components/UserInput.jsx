@@ -27,21 +27,21 @@ export default function UserInput({}) {
 			<div className='input-group'>
 				<p>
 					<label>initial investment</label>
-					<input type='number' />
+					<input type='number' required />
 				</p>
 				<p>
 					<label>annual investment</label>
-					<input type='number' />
+					<input type='number' required/>
 				</p>
 			</div>
 			<div className='input-group'>
 				<p>
 					<label>expected duration</label>
-					<input type='number' />
+					<input type='number' required/>
 				</p>
 				<p>
 					<label>duration</label>
-					<input type='number' />
+					<input type='number' required/>
 				</p>
 			</div>
 		</section>

@@ -10,6 +10,10 @@ export default function UserInput({}) {
       setInitialInvestment(event.target.value)
    }
 
+   function handleAnnual(event){
+      setAnnualInvestment(event.target.value)
+   }
+
 	return (
 		<section id='user-input'>
 			<div className='input-group'>

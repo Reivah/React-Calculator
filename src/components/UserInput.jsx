@@ -41,7 +41,7 @@ export default function UserInput({}) {
 				</p>
 				<p>
 					<label>duration</label>
-					<input type='number' required onChange={handleDuration}/>
+					<input type='number' required onChange={handleDuration} value={duration}/>
 				</p>
 			</div>
 		</section>

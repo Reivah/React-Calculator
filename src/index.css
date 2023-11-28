@@ -43,9 +43,10 @@ body {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
+ 
 }
 
-#user-input label {
+#user-input label{
   display: block;
   margin-bottom: 0.25rem;
   font-family: 'Roboto Condensed', sans-serif;

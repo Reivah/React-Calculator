@@ -6,7 +6,9 @@ export default function UserInput({}) {
    const [expectedDuration, setEpectedDuration] = useState(20000)
    const [duration, setDuration] = useState(20000)
 
-
+   function handleInitial(event){
+      setInitialInvestment(event.target.value)
+   }
 
 	return (
 		<section id='user-input'>

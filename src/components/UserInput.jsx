@@ -3,7 +3,7 @@ export default function UserInput({}) {
 
    const [initialInvestment, setInitialInvestment] = useState(20000)
    const [annualInvestment, setAnnualInvestment] = useState(20000)
-   const [expectedDuration, setExpectedDuration] = useState(20000)
+   const [expectedReturn, setExpectedReturn] = useState(20000)
    const [duration, setDuration] = useState(20000)
 
    function handleInitial(event){
@@ -14,8 +14,12 @@ export default function UserInput({}) {
       setAnnualInvestment(event.target.value)
    }
 
+   function handleReturn(event){
+      setExpectedReturn(event.target.value)
+   }
+
    function handleDuration(event){
-      setExpectedDuration(event.target.value)
+      setDuration(event.target.value)
    }
 
 	return (

@@ -8,6 +8,9 @@ export default function ResultTable({ initial, annual, expReturn, duration }) {
         duration
     }
 
+    const resultFormula = calculateInvestmentResults(inputInformation)
+    console.log(resultFormula);
+
 	return (
 		<table id='result'>
 			<thead>

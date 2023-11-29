@@ -8,11 +8,11 @@ export default function UserInput({...props}) {
 			<div className='input-group'>
 				<p>
 					<label>initial investment</label>
-					<input type='number' required onChange={handleInitial} value={initialInvestment} />
+					<input type='number' required onChange={props.onHandleInitial} value={initialInvestment} />
 				</p>
 				<p>
 					<label>annual investment</label>
-					<input type='number' required onChange={handleAnnual} value={annualInvestment}/>
+					<input type='number' required onChange={props.onHandleAnnual} value={annualInvestment}/>
 				</p>
 			</div>
 			<div className='input-group'>

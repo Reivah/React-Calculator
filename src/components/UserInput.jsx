@@ -18,11 +18,11 @@ export default function UserInput({...props}) {
 			<div className='input-group'>
 				<p>
 					<label>expected duration</label>
-					<input type='number' required onChange={handleReturn} value={expectedReturn}/>
+					<input type='number' required onChange={props.onHandleReturn} value={expectedReturn}/>
 				</p>
 				<p>
 					<label>duration</label>
-					<input type='number' required onChange={handleDuration} value={duration}/>
+					<input type='number' required onChange={props.onHandleDuration} value={duration}/>
 				</p>
 			</div>
 		</section>

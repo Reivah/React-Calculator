@@ -32,7 +32,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<UserInput  onHandleInitial={handleInitial} onHandleAnnual={handleAnnual} onHandleReturn={handleReturn} onHandleDuration={handleDuration}/>
+			<UserInput  onHandleInitial={handleInitial} onHandleAnnual={handleAnnual} onHandleReturn={handleReturn} onHandleDuration={handleDuration} onValueInvestment={initialInvestment} onValueAnnual={annualInvestment} onValueReturn={expectedReturn} onValueDuration={duration}/>
 		</>
 	)
 }

@@ -1,7 +1,15 @@
-export default function ResultTable(){
+export default function ResultTable({...props}){
     return (
-        <table>
-            
+        <table id="result">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+
         </table>
     )
 }

@@ -1,5 +1,5 @@
 
-export default function UserInput({}) {
+export default function UserInput({...props}) {
 
  
 

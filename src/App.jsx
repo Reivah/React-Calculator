@@ -32,7 +32,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<UserInput  />
+			<UserInput  onHandleInitial={handleInitial} onHandleAnnual={handleAnnual}/>
 		</>
 	)
 }

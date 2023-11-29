@@ -1,30 +1,6 @@
-import {useState} from 'react'
+
 export default function UserInput({}) {
 
- 
-
-	const [initialInvestment, setInitialInvestment] = useState(20000)
-	const [annualInvestment, setAnnualInvestment] = useState(8000)
-	const [expectedReturn, setExpectedReturn] = useState(7 )
-	const [duration, setDuration] = useState(5)
-
-	
-	function handleInitial(event){
-		setInitialInvestment(event.target.value)
-	 }
-  
-	 function handleAnnual(event){
-		setAnnualInvestment(event.target.value)
-	 }
-  
-	 function handleReturn(event){
-		setExpectedReturn(event.target.value)
-	 }
-  
-	 function handleDuration(event){
-		setDuration(event.target.value)
-	 }
-	
  
 
 	return (

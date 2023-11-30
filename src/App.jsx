@@ -33,7 +33,7 @@ function App() {
 		<>
 			<Header />
 			<UserInput  onHandleInitial={handleInitial} onHandleAnnual={handleAnnual} onHandleReturn={handleReturn} onHandleDuration={handleDuration} onValueInvestment={initialInvestment} onValueAnnual={annualInvestment} onValueReturn={expectedReturn} onValueDuration={duration}/>
-			<ResultTable initial={initialInvestment} annual={annualInvestment} expReturn={expectedReturn} duration={duration}/>
+			<ResultTable initialInvestment={initialInvestment} annualInvestment={annualInvestment} expectedReturn={expectedReturn} duration={duration}/>
 		</>
 	)
 }

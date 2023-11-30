@@ -1,15 +1,16 @@
 import { calculateInvestmentResults } from '../util/investment'
-export default function ResultTable({ initial, annual, expReturn, duration }) {
+export default function ResultTable({ initialInvestment,  annualInvestment, expectedReturn, duration }) {
 	
     const inputInformation = {
-        initial,
-        annual,
-        expReturn,
-        duration
+	  initialInvestment,
+	  annualInvestment,
+	  expectedReturn,
+	  duration
     }
 
-    const resultFormula = calculateInvestmentResults(inputInformation)
-    console.log(resultFormula);
+ const inputInfo = calculateInvestmentResults(inputInformation)
+ console.log(inputInfo);
+   
 
 	return (
 		<table id='result'>

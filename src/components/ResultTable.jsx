@@ -27,7 +27,9 @@ export default function ResultTable({ initialInvestment,  annualInvestment, expe
 				{inputInformations.map((information, index) => {
 					return (
 						<tr key={index}>
-							<td></td>
+							<td>{information.year}</td>
+							<td>{information.valueEndOfYear}</td>
+							<td>{information.interest}</td>
 						</tr>
 					)
 				})}

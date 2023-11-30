@@ -26,7 +26,9 @@ export default function ResultTable({ initialInvestment,  annualInvestment, expe
 			<tbody>
 				{inputInformations.map((information, index) => {
 					return (
-						<tr></tr>
+						<tr key={index}>
+							<td></td>
+						</tr>
 					)
 				})}
 				

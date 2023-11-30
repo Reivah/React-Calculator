@@ -1,16 +1,16 @@
-import { calculateInvestmentResults } from '../util/investment'
+import { calculateInvestmentResults, formatter } from '../util/investment'
 export default function ResultTable({ initialInvestment,  annualInvestment, expectedReturn, duration }) {
 	
-    const inputInformation = {
+    const inputValues = {
 	  initialInvestment,
 	  annualInvestment,
 	  expectedReturn,
-	  duration
+	  duration,
     }
 
- const inputInfo = calculateInvestmentResults(inputInformation)
- console.log(inputInfo);
-   
+ const inputInformations = calculateInvestmentResults(inputValues)
+
+	
 
 	return (
 		<table id='result'>
@@ -24,13 +24,12 @@ export default function ResultTable({ initialInvestment,  annualInvestment, expe
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td></td>
-				</tr>
+				{inputInformations.map((information, index) => {
+					return (
+						<tr></tr>
+					)
+				})}
+				
 			</tbody>
 		</table>
 	)

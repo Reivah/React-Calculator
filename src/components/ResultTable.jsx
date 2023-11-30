@@ -25,11 +25,14 @@ export default function ResultTable({ initialInvestment,  annualInvestment, expe
 			</thead>
 			<tbody>
 				{inputInformations.map((information, index) => {
+					const totalInterest = information.valueEndOfYear - information.annualInvestment * information.year
 					return (
 						<tr key={index}>
 							<td>{information.year}</td>
-							<td>{information.valueEndOfYear}</td>
-							<td>{information.interest}</td>
+							<td>{formatter.format(information.valueEndOfYear)}</td>
+							<td>{formatter.format(information.interest)}</td>
+							<td></td>
+							<td></td>
 						</tr>
 					)
 				})}

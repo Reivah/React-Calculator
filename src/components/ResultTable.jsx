@@ -10,7 +10,7 @@ export default function ResultTable({ initialInvestment,  annualInvestment, expe
 
  const inputInformations = calculateInvestmentResults(inputValues)
 
-	
+	const investment = inputInformations[0].valueEndOfYear - inputInformations[0].interest - inputInformations[0].annualInvestment
 
 	return (
 		<table id='result'>
